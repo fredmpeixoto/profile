@@ -1,5 +1,47 @@
 <div class="container">
   <img src="assets/photo.jpg" alt="Me">
-  <h2>Hi, Wellcome!</h2>
-  <h3>I´m Fred, software Developer and motocycle and my free time!</h3>
+  <h2>Hi, Wellcome my resume!</h2>
+  <h3>I´m Fred, I´ve been working since 2013 as software Developer and started my carrea in IT in 2009,
+    <br>
+    <small>
+      I´m passionate to tecnologies and motocycle and my free time!
+    </small> </h3>
+
+  <div class="description" [class.all-text]="overflowText">
+
+    <p>
+      Specialized in IT since 2009, i have been work for IT 10 years being the last 6 year as developer, I have graduate
+      in two colleges and work as fullstrack developer.
+    </p>
+
+    <p>
+      Today my better skill is with development in front end experienced ANGULAR 2+, JAVASCRIPT, AngularJS, Jquery,
+      BootStrap, Material Designer, HTML5, SCSS.
+    </p>
+
+    <p>
+      In Back-end Microsoft ASP.NET CORE, C#, WEB API, SOAP, MVC, Web Forms, Windows Form, Entity Framework, ADO, SQL
+      SERVER.
+      Also i have other skilled like PHP, WEB SERVICE, MySQL, POSTGREE, PLSQL, Node.js
+    </p>
+
+    <p>
+      Experience with DDD, Design Pattern, scrum, requirements gathering with user, software architecture, Azure devops,
+      leadership team with method Agile, manager projects beside scrum master..
+    </p>
+
+    <p>
+      Passionate for technology and community I´m GDG São José dos Campos organizer, where developers build software and
+      shared knowledge .
+    </p>
+
+    <p>
+      The challenge is my motivation to be creative and strategic in search successful.
+      Knowledge in Cloud using Amazon AWS and Google Cloud, also knowledge in network infrastructure.
+    </p>
+
+  </div>
+  <span (click)="overflowText = !overflowText">
+    Ver {{ !overflowText ? 'mais': 'menos'}}...
+  </span>
 </div>
